@@ -6,6 +6,7 @@ body{
     margin: 0;
     color: #34404b;
     font: 12px/1 'Harmonia_regular', sans-serif;
+    background-color: #f4f6f8;
 }
 h1, h2, h3, h4, h5, h6, p{
     margin: 0;
@@ -18,6 +19,10 @@ ul, ol{
 a{
     color: inherit;
     text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color: inherit;
 }
 img{
     max-width: 100%;
@@ -44,11 +49,60 @@ button{
 .justify-sp-between{
     justify-content: space-between;
 }
+.orange-text{
+    color: #ff5912;
+}
 /*DEFAULT CLASSES END*/
 
 /*DEFAULT COMPONENT START*/
 .custom-icon{
     display: inline-block;
+}
+.title{
+    font-family: 'Harmonia_black', sans-serif;
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+.default-section{
+    padding: 60px 0;
+}
+.subtitle{
+    display: block;
+    font-size: 16px;
+    margin-bottom: 70px;
+    color: #495662;
+}
+.item{
+    background-color: #fff;
+    padding: 30px 10px;
+    transform: all .3s linear;
+    text-align: center;
+}
+.item .item-img{
+    height: 220px;
+}
+.new-items .item-title{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.new-items .item-price{
+    font-size: 18px;
+    font-weight: bold;
+}
+.item:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.title.big span{
+    font-size: 52px;
+}
+header{
+    background-color: #fff;
 }
 header .top-header{
     border-bottom: 1px solid #edeff1;
@@ -94,7 +148,7 @@ header .top-header .phone-list li span.custom-icon{
     font-size: 9px;
     font-weight: 600;
     position: absolute;
-    bottom: 24px;
+    bottom: 21px;
     left: 3px;
 }
 .bottom-header>.container>.flex-container{
@@ -103,4 +157,50 @@ header .top-header .phone-list li span.custom-icon{
 /*DEFAULT COMPONENT END*/
 
 /*ALL STYLES START*/
+.items-carousel{
+    min-height: 650px;
+    background: url("../img/carousel-img-1.jpg") no-repeat center / cover;
+    margin-bottom: 60px;
+}
+.items-carousel-description .items-text span {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: block;
+    color: #3c4751;
+}
+.items-carousel-description .items-text p{
+    font-size: 16px;
+    padding-bottom: 60px;
+    color: #495662;
+}
+.price-n-order{
+    font-weight: 600;
+    font-size: 18px;
+}
+.price {
+    margin-right: 25px;
+    color: #3c4751;
+}
+.order>a>i{
+    margin-bottom: -1px;
+}
+.load-more{
+    margin-top: 80px;
+    margin-bottom: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+.load-more .dot{
+    width: 10px;
+    height: 10px;
+    background-color: #ff5912;
+    line-height: 60px;
+    border-radius: 50%;
+}
+.load-more span + span{
+    margin-left: 6px;
+}
 /*ALL STYLES END*/
