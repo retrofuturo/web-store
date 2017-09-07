@@ -374,7 +374,6 @@ ul.payment-icons>li + li{
     font-size: 18px;
 }
 .price {
-    margin-right: 25px;
     color: #3c4751;
 }
 .order>a>i{
@@ -404,6 +403,8 @@ ul.payment-icons>li + li{
 }
 .sales-block{
     position: relative;
+    margin-right: 20px;
+    margin-right: 50px;
 }
 .sales-block > div{
     display: inline-block;
@@ -458,7 +459,7 @@ ul.payment-icons>li + li{
 .full-kit span{
     display: block;
     color: #495662;
-    font-size: 14px;
+    font-size: 12px;
 }
 .fwk-price{
     font-size: 32px;
