@@ -351,10 +351,15 @@ ul.payment-icons>li + li{
 /*DEFAULT COMPONENT END*/
 
 /*ALL STYLES START*/
+.item-flexslider{
+    position: relative;
+
+}
 .items-carousel{
     min-height: 650px;
     background: url("../img/carousel-img-1.jpg") no-repeat center / cover;
     margin-bottom: 60px;
+    padding-left: calc(8.333% + 30px);
 }
 .items-text span {
     font-weight: 600;
@@ -376,8 +381,12 @@ ul.payment-icons>li + li{
 .price {
     color: #3c4751;
 }
+.order{
+    margin-left: 25px;
+}
 .order>a>i{
     margin-bottom: -1px;
+    margin-right: 10px;
 }
 .load-more{
     margin-top: 80px;

@@ -75,8 +75,21 @@ $( function() {
         });
     });
 
+    // flexslider home
+
+    $(window).load(function() {
+        $('.item-flexslider').flexslider({
+            animation: "slide"
+        });
+    });
+
     // formstyler init
 
     $('.custom-number').styler();
+
+    // slicknav init
+
+    $('.menu').slicknav();
+
 
 } );

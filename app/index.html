@@ -10,6 +10,11 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
+    <!-- jQuery styles -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/sprite.css">
@@ -47,7 +52,7 @@
                 <div class="logo">
                     <img src="img/logo.png" alt="">
                 </div>
-                <ul class="flex-container justify-sp-between menu">
+                <ul class="menu flex-container justify-sp-between">
                     <li><a href="">Home</a></li>
                     <li><a href="category.html">Products</a></li>
                     <li><a href="">Hot Deals</a></li>
@@ -69,18 +74,54 @@
 <main>
     <section class="items-carousel flex-container align-center">
         <div class="container">
-            <div class="items-carousel-description">
-                <div class="title big orange-text">
-                    <span>Full winter kit</span>
-                </div>
-                <div class="items-text">
-                    <span>Half Jacket + Skiny Trousers + Boot leather</span>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
-                </div>
-                <div class="price-n-order">
-                    <span class="price">Price : 120$</span>
-                    <span class="order orange-text"><a href=""><i class="custom-icon icon-cart-hover-ic"></i> Order now</a></span>
-                </div>
+            <div class="item-flexslider">
+                <ul class="slides">
+                    <li>
+                        <div class="items-carousel-description">
+                            <div class="title big orange-text">
+                                <span>Full winter kit</span>
+                            </div>
+                            <div class="items-text">
+                                <span>Half Jacket + Skiny Trousers + Boot leather</span>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
+                            </div>
+                            <div class="price-n-order">
+                                <span class="price">Price : 120$</span>
+                                <span class="order orange-text"><a href=""><i class="custom-icon icon-cart-hover-ic"></i> Order now</a></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="items-carousel-description">
+                            <div class="title big orange-text">
+                                <span>Full winter kit</span>
+                            </div>
+                            <div class="items-text">
+                                <span>Half Jacket + Skiny Trousers + Boot leather</span>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
+                            </div>
+                            <div class="price-n-order">
+                                <span class="price">Price : 120$</span>
+                                <span class="order orange-text"><a href=""><i class="custom-icon icon-cart-hover-ic"></i> Order now</a></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="items-carousel-description">
+                            <div class="title big orange-text">
+                                <span>Full winter kit</span>
+                            </div>
+                            <div class="items-text">
+                                <span>Half Jacket + Skiny Trousers + Boot leather</span>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
+                            </div>
+                            <div class="price-n-order">
+                                <span class="price">Price : 120$</span>
+                                <span class="order orange-text"><a href=""><i class="custom-icon icon-cart-hover-ic"></i> Order now</a></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -247,7 +288,7 @@
                             </div>
                         </div>
                         <div class="full-kit">
-                            <span class="fwk">FULL WINTER KIT</span>
+                            <a href="product.html"><span class="fwk">FULL WINTER KIT</span></a>
                             <span>Half Jacket + Skiny Trousers + Boot leather</span>
                         </div>
                         <div class="fwk-price orange-text">
@@ -421,7 +462,11 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+<script src="js/plugins.min.js"></script>
 </body>
 </html>
