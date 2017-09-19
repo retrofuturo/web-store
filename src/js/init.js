@@ -89,7 +89,10 @@ $( function() {
 
     // slicknav init
 
-    $('.menu').slicknav();
+    $('.menu').slicknav({
+        appendTo: "header .bottom-header .container .bottom-menu",
+        label: ""
+    });
 
 
 } );

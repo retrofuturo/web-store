@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
 
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/fonts.css">
@@ -29,7 +30,7 @@
 </head>
 <body>
 <!-- HEADER START -->
-<header>
+<header class="header">
     <div class="top-header">
         <div class="container">
             <div class="flex-container justify-sp-between">
@@ -48,7 +49,7 @@
     </div>
     <div class="bottom-header">
         <div class="container">
-            <div class="flex-container justify-sp-between">
+            <div class="flex-container justify-sp-between bottom-menu">
                 <div class="logo">
                     <img src="img/logo.png" alt="">
                 </div>
@@ -60,9 +61,9 @@
                     <li><a href="">Contact</a></li>
                 </ul>
                 <div class="customer-nav flex-container justify-sp-between align-center">
-                    <a href=""><i class="custom-icon icon-search-ic"></i></a>
-                    <a href=""><i class="custom-icon icon-user-ic"></i></a>
-                    <a href="" class="basket"><span class="basket-count">5</span><i class="custom-icon icon-cart-hover-ic"></i></a>
+                    <a href="" class="search"><i class="custom-icon icon-search-ic"></i><i class="custom-icon icon-search-ic-hover"></i></a>
+                    <a href="" class="user"><i class="custom-icon icon-user-ic"></i><i class="custom-icon icon-user-ic-hover"></i></a>
+                    <a href="" class="basket"><span class="basket-count">5</span><i class="custom-icon icon-cart-ic"></i><i class="custom-icon icon-cart-hover-ic"></i></a>
                 </div>
             </div>
         </div>
@@ -74,54 +75,64 @@
 <main>
     <section class="items-carousel flex-container align-center">
         <div class="container">
-            <div class="item-flexslider">
-                <ul class="slides">
-                    <li>
-                        <div class="items-carousel-description">
-                            <div class="title big orange-text">
-                                <span>Full winter kit</span>
-                            </div>
-                            <div class="items-text">
-                                <span>Half Jacket + Skiny Trousers + Boot leather</span>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
-                            </div>
-                            <div class="price-n-order">
-                                <span class="price">Price : 120$</span>
-                                <span class="order orange-text"><a href=""><i class="custom-icon icon-cart-hover-ic"></i> Order now</a></span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="items-carousel-description">
-                            <div class="title big orange-text">
-                                <span>Full winter kit</span>
-                            </div>
-                            <div class="items-text">
-                                <span>Half Jacket + Skiny Trousers + Boot leather</span>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
-                            </div>
-                            <div class="price-n-order">
-                                <span class="price">Price : 120$</span>
-                                <span class="order orange-text"><a href=""><i class="custom-icon icon-cart-hover-ic"></i> Order now</a></span>
+            <div class="main-carousel">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="items-carousel-description">
+                                <div class="title big orange-text">
+                                    <span>Full winter kit</span>
+                                </div>
+                                <div class="items-text">
+                                    <span>Half Jacket + Skiny Trousers + Boot leather</span>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
+                                </div>
+                                <div class="price-n-order">
+                                    <span class="price">Price : 120$</span>
+                                    <span class="order orange-text"><a href=""><i class="custom-icon icon-cart-hover-ic"></i> Order now</a></span>
+                                </div>
                             </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="items-carousel-description">
-                            <div class="title big orange-text">
-                                <span>Full winter kit</span>
-                            </div>
-                            <div class="items-text">
-                                <span>Half Jacket + Skiny Trousers + Boot leather</span>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
-                            </div>
-                            <div class="price-n-order">
-                                <span class="price">Price : 120$</span>
-                                <span class="order orange-text"><a href=""><i class="custom-icon icon-cart-hover-ic"></i> Order now</a></span>
+                        <div class="item">
+                            <div class="items-carousel-description">
+                                <div class="title big orange-text">
+                                    <span>Full winter kit</span>
+                                </div>
+                                <div class="items-text">
+                                    <span>Half Jacket + Skiny Trousers + Boot leather</span>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
+                                </div>
+                                <div class="price-n-order">
+                                    <span class="price">Price : 120$</span>
+                                    <span class="order orange-text"><a href=""><i class="custom-icon icon-cart-hover-ic"></i> Order now</a></span>
+                                </div>
                             </div>
                         </div>
-                    </li>
-                </ul>
+                        <div class="item">
+                            <div class="items-carousel-description">
+                                <div class="title big orange-text">
+                                    <span>Full winter kit</span>
+                                </div>
+                                <div class="items-text">
+                                    <span>Half Jacket + Skiny Trousers + Boot leather</span>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
+                                </div>
+                                <div class="price-n-order">
+                                    <span class="price">Price : 120$</span>
+                                    <span class="order orange-text"><a href=""><i class="custom-icon icon-cart-hover-ic"></i> Order now</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -133,8 +144,8 @@
             <span class="subtitle text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry</span>
             <div class="new-items">
                 <div class="row">
-                    <div class="col-md-3">
-                        <div class="item">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="item-product">
                             <div class="item-img">
                                 <a href="category.html">
                                     <img src="img/item-img-1.png" alt="">
@@ -158,16 +169,16 @@
                                         <li class="green-bg"></li>
                                     </ul>
                                     <ul class="item-controls">
-                                        <li><a href=""><span class="custom-icon icon-share-ic"></span></a></li>
-                                        <li><a href=""><span class="custom-icon icon-add-to-cart-ic"></span></a></li>
-                                        <li><a href=""><span class="custom-icon icon-like-ic"></span></a></li>
+                                        <li><a href="" class="share"><i class="custom-icon icon-share-ic"></i><i class="custom-icon icon-share-ic-hover"></i></a></li>
+                                        <li><a href="" class="add-to-cart"><i class="custom-icon icon-add-to-cart-ic"></i><i class="custom-icon icon-add-to-cart-ic-hover"></i></a></li>
+                                        <li><a href="" class="like"><i class="custom-icon icon-like-ic"></i><i class="custom-icon icon-like-ic-hover"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="item">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="item-product">
                             <div class="item-img">
                                 <a href="product.html">
                                     <img src="img/item-img-2.png" alt="">
@@ -191,16 +202,16 @@
                                         <li class="green-bg"></li>
                                     </ul>
                                     <ul class="item-controls">
-                                        <li><a href=""><span class="custom-icon icon-share-ic"></span></a></li>
-                                        <li><a href=""><span class="custom-icon icon-add-to-cart-ic"></span></a></li>
-                                        <li><a href=""><span class="custom-icon icon-like-ic"></span></a></li>
+                                        <li><a href="" class="share"><i class="custom-icon icon-share-ic"></i><i class="custom-icon icon-share-ic-hover"></i></a></li>
+                                        <li><a href="" class="add-to-cart"><i class="custom-icon icon-add-to-cart-ic"></i><i class="custom-icon icon-add-to-cart-ic-hover"></i></a></li>
+                                        <li><a href="" class="like"><i class="custom-icon icon-like-ic"></i><i class="custom-icon icon-like-ic-hover"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="item">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="item-product">
                             <div class="item-img">
                                 <a href="">
                                     <img src="img/item-img-3.png" alt="">
@@ -224,16 +235,16 @@
                                         <li class="green-bg"></li>
                                     </ul>
                                     <ul class="item-controls">
-                                        <li><a href=""><span class="custom-icon icon-share-ic"></span></a></li>
-                                        <li><a href=""><span class="custom-icon icon-add-to-cart-ic"></span></a></li>
-                                        <li><a href=""><span class="custom-icon icon-like-ic"></span></a></li>
+                                        <li><a href="" class="share"><i class="custom-icon icon-share-ic"></i><i class="custom-icon icon-share-ic-hover"></i></a></li>
+                                        <li><a href="" class="add-to-cart"><i class="custom-icon icon-add-to-cart-ic"></i><i class="custom-icon icon-add-to-cart-ic-hover"></i></a></li>
+                                        <li><a href="" class="like"><i class="custom-icon icon-like-ic"></i><i class="custom-icon icon-like-ic-hover"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="item">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="item-product">
                             <div class="item-img">
                                 <a href="">
                                     <img src="img/item-img-1.png" alt="">
@@ -257,9 +268,9 @@
                                         <li class="green-bg"></li>
                                     </ul>
                                     <ul class="item-controls">
-                                        <li><a href=""><span class="custom-icon icon-share-ic"></span></a></li>
-                                        <li><a href=""><span class="custom-icon icon-add-to-cart-ic"></span></a></li>
-                                        <li><a href=""><span class="custom-icon icon-like-ic"></span></a></li>
+                                        <li><a href="" class="share"><i class="custom-icon icon-share-ic"></i><i class="custom-icon icon-share-ic-hover"></i></a></li>
+                                        <li><a href="" class="add-to-cart"><i class="custom-icon icon-add-to-cart-ic"></i><i class="custom-icon icon-add-to-cart-ic-hover"></i></a></li>
+                                        <li><a href="" class="like"><i class="custom-icon icon-like-ic"></i><i class="custom-icon icon-like-ic-hover"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -277,7 +288,7 @@
     <section class="default-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-7 col-xs-12">
                     <div class="kit white-bg flex-container">
                         <div class="sales-block">
                             <div class="light-orange-bg"></div>
@@ -292,11 +303,11 @@
                             <span>Half Jacket + Skiny Trousers + Boot leather</span>
                         </div>
                         <div class="fwk-price orange-text">
-                            <span><span class="custom-icon icon-add-to-cart-ic"></span>120$</span>
+                            <span><span class="custom-icon icon-add-to-cart-ic-hover"></span>120$</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-5 col-xs-12">
                     <div class="advert white-bg">
                         <span class="ad-title">adv <span class="orange-text">area</span></span>
                         <span class="ad-size">470 x 100</span>
@@ -313,7 +324,7 @@
             <span class="subtitle text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry</span>
             <div class="min-items">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="min-item-add flex-container align-center white-bg">
                             <div class="min-item-img">
                                 <img src="img/item-img-1-min.png" alt="">
@@ -332,12 +343,12 @@
                                     <span>100$</span>
                                 </div>
                                 <div class="add orange-text">
-                                    <a href=""><span class="custom-icon icon-add-to-cart-ic"></span> add to cart</a>
+                                    <a href=""><span class="custom-icon icon-add-to-cart-ic-hover"></span>add to cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="min-item-add flex-container align-center white-bg">
                             <div class="min-item-img">
                                 <img src="img/item-img-1-min.png" alt="">
@@ -356,12 +367,12 @@
                                     <span>100$</span>
                                 </div>
                                 <div class="add orange-text">
-                                    <a href=""><span class="custom-icon icon-add-to-cart-ic"></span> add to cart</a>
+                                    <a href=""><span class="custom-icon icon-add-to-cart-ic-hover"></span> add to cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-4 hidden-sm hidden-xs">
                         <div class="min-item-add flex-container align-center white-bg">
                             <div class="min-item-img">
                                 <img src="img/item-img-1-min.png" alt="">
@@ -380,7 +391,7 @@
                                     <span>100$</span>
                                 </div>
                                 <div class="add orange-text">
-                                    <a href=""><span class="custom-icon icon-add-to-cart-ic"></span> add to cart</a>
+                                    <a href=""><span class="custom-icon icon-add-to-cart-ic-hover"></span> add to cart</a>
                                 </div>
                             </div>
                         </div>
@@ -417,33 +428,37 @@
 <footer class="white-bg">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <div class="footer-logo">
-                    <img src="img/logo.png" alt="">
+            <div class="col-md-4 col-sm-3 col-xs-12">
+                <div class="logo-and-copy">
+                    <div class="footer-logo">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <span class="foot-copyright">shopy c 2015 . your copy right here</span>
                 </div>
-                <span class="foot-copyright">shopy c 2015 . your copy right here</span>
             </div>
-            <div class="col-md-2">
-                <ul class="footer-menu">
-                    <li><a href="">about us</a></li>
-                    <li><a href="">contact us</a></li>
-                    <li><a href="">support</a></li>
-                </ul>
-            </div>
-            <div class="col-md-2">
-                <ul class="footer-menu">
-                    <li><a href="">our feed</a></li>
-                    <li><a href="">terms and conditions</a></li>
-                    <li><a href="">our privacy</a></li>
-                </ul>
-            </div>
-            <div class="col-md-2">
-                <ul class="footer-menu">
-                    <li><a href="">join us</a></li>
-                    <li><a href="">live support</a></li>
-                </ul>
-            </div>
-            <div class="col-md-2">
+
+                <div class="col-sm-2 col-xs-4">
+                    <ul class="footer-menu">
+                        <li><a href="">about us</a></li>
+                        <li><a href="">contact us</a></li>
+                        <li><a href="">support</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2 col-xs-4">
+                    <ul class="footer-menu">
+                        <li><a href="">our feed</a></li>
+                        <li><a href="">terms and conditions</a></li>
+                        <li><a href="">our privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2 col-xs-4">
+                    <ul class="footer-menu">
+                        <li><a href="">join us</a></li>
+                        <li><a href="">live support</a></li>
+                    </ul>
+                </div>
+
+            <div class="col-md-2 col-sm-3 col-xs-12">
                 <div class="payment-methods">
                     <span>Payment methods</span>
                     <ul class="payment-icons">
@@ -467,6 +482,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
 <script src="js/jquery.slicknav.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
 <script src="js/plugins.min.js"></script>
 </body>
 </html>

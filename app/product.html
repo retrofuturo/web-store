@@ -13,6 +13,7 @@
     <!-- jQuery styles -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
 
     <link rel="stylesheet" href="css/font-awesome.css">
@@ -29,7 +30,7 @@
 </head>
 <body>
 <!-- HEADER START -->
-<header>
+<header class="header">
     <div class="top-header">
         <div class="container">
             <div class="flex-container justify-sp-between">
@@ -48,21 +49,21 @@
     </div>
     <div class="bottom-header">
         <div class="container">
-            <div class="flex-container justify-sp-between">
+            <div class="flex-container justify-sp-between bottom-menu">
                 <div class="logo">
                     <img src="img/logo.png" alt="">
                 </div>
-                <ul class="flex-container justify-sp-between menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="">Products</a></li>
+                <ul class="menu flex-container justify-sp-between">
+                    <li><a href="">Home</a></li>
+                    <li><a href="category.html">Products</a></li>
                     <li><a href="">Hot Deals</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
                 <div class="customer-nav flex-container justify-sp-between align-center">
-                    <a href=""><i class="custom-icon icon-search-ic"></i></a>
-                    <a href=""><i class="custom-icon icon-user-ic"></i></a>
-                    <a href="" class="basket"><span class="basket-count">5</span><i class="custom-icon icon-cart-hover-ic"></i></a>
+                    <a href="" class="search"><i class="custom-icon icon-search-ic"></i><i class="custom-icon icon-search-ic-hover"></i></a>
+                    <a href="" class="user"><i class="custom-icon icon-user-ic"></i><i class="custom-icon icon-user-ic-hover"></i></a>
+                    <a href="" class="basket"><span class="basket-count">5</span><i class="custom-icon icon-cart-ic"></i><i class="custom-icon icon-cart-hover-ic"></i></a>
                 </div>
             </div>
         </div>
@@ -75,6 +76,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-5">
+                <div class="title big orange-text text-center hidden-lg hidden-md">
+                    <span>FULL WINTER KIT</span>
+                </div>
                 <div class="product-carousel center-block">
                     <div class="flexslider">
                         <ul class="slides">
@@ -93,7 +97,7 @@
             </div>
             <div class="col-md-7">
                 <div class="product-description">
-                    <div class="title big orange-text">
+                    <div class="title big orange-text hidden-sm hidden-xs">
                         <span>FULL WINTER KIT</span>
                     </div>
                     <div class="items-text">
@@ -126,7 +130,7 @@
                                 </div>
                                 <div class="quantity flex-container align-center">
                                     <span>Choose Quantity</span>
-                                    <input type="number" name="quantity" id="" class="custom-number" placeholder="0">
+                                    <input type="number" name="quantity" id="" class="custom-number" value="1" min="1">
                                 </div>
                             </form>
                         </div>
@@ -135,9 +139,9 @@
                                 <span>Price : 120$</span>
                             </div>
                             <ul class="product-share">
-                                <a href=""><i class="custom-icon icon-share-ic"></i></a>
-                                <a href=""><i class="custom-icon icon-add-to-cart-ic"></i></a>
-                                <a href=""><i class="custom-icon icon-like-ic"></i></a>
+                                <a href="" class="share"><i class="custom-icon icon-share-ic"></i><i class="custom-icon icon-share-ic-hover"></i></a>
+                                <a href="" class="add-to-cart"><i class="custom-icon icon-add-to-cart-ic"></i><i class="custom-icon icon-add-to-cart-ic-hover"></i></a>
+                                <a href="" class="like"><i class="custom-icon icon-like-ic"></i><i class="custom-icon icon-like-ic-hover"></i></a>
                             </ul>
                             <input type="submit" value="Order Now" class="btn btn-round" form="product-option">
                         </div>
@@ -157,7 +161,7 @@
             <div class="new-items">
                 <div class="row">
                     <div class="col-md-3">
-                        <div class="item">
+                        <div class="item-product">
                             <div class="item-img">
                                 <a href="category.html">
                                     <img src="img/item-img-1.png" alt="">
@@ -181,16 +185,16 @@
                                         <li class="green-bg"></li>
                                     </ul>
                                     <ul class="item-controls">
-                                        <li><a href=""><span class="custom-icon icon-share-ic"></span></a></li>
-                                        <li><a href=""><span class="custom-icon icon-add-to-cart-ic"></span></a></li>
-                                        <li><a href=""><span class="custom-icon icon-like-ic"></span></a></li>
+                                        <li><a href="" class="share"><i class="custom-icon icon-share-ic"></i><i class="custom-icon icon-share-ic-hover"></i></a></li>
+                                        <li><a href="" class="add-to-cart"><i class="custom-icon icon-add-to-cart-ic"></i><i class="custom-icon icon-add-to-cart-ic-hover"></i></a></li>
+                                        <li><a href="" class="like"><i class="custom-icon icon-like-ic"></i><i class="custom-icon icon-like-ic-hover"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="item">
+                        <div class="item-product">
                             <div class="item-img">
                                 <a href="product.html">
                                     <img src="img/item-img-2.png" alt="">
@@ -214,16 +218,16 @@
                                         <li class="green-bg"></li>
                                     </ul>
                                     <ul class="item-controls">
-                                        <li><a href=""><span class="custom-icon icon-share-ic"></span></a></li>
-                                        <li><a href=""><span class="custom-icon icon-add-to-cart-ic"></span></a></li>
-                                        <li><a href=""><span class="custom-icon icon-like-ic"></span></a></li>
+                                        <li><a href="" class="share"><i class="custom-icon icon-share-ic"></i><i class="custom-icon icon-share-ic-hover"></i></a></li>
+                                        <li><a href="" class="add-to-cart"><i class="custom-icon icon-add-to-cart-ic"></i><i class="custom-icon icon-add-to-cart-ic-hover"></i></a></li>
+                                        <li><a href="" class="like"><i class="custom-icon icon-like-ic"></i><i class="custom-icon icon-like-ic-hover"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="item">
+                        <div class="item-product">
                             <div class="item-img">
                                 <a href="">
                                     <img src="img/item-img-3.png" alt="">
@@ -247,16 +251,16 @@
                                         <li class="green-bg"></li>
                                     </ul>
                                     <ul class="item-controls">
-                                        <li><a href=""><span class="custom-icon icon-share-ic"></span></a></li>
-                                        <li><a href=""><span class="custom-icon icon-add-to-cart-ic"></span></a></li>
-                                        <li><a href=""><span class="custom-icon icon-like-ic"></span></a></li>
+                                        <li><a href="" class="share"><i class="custom-icon icon-share-ic"></i><i class="custom-icon icon-share-ic-hover"></i></a></li>
+                                        <li><a href="" class="add-to-cart"><i class="custom-icon icon-add-to-cart-ic"></i><i class="custom-icon icon-add-to-cart-ic-hover"></i></a></li>
+                                        <li><a href="" class="like"><i class="custom-icon icon-like-ic"></i><i class="custom-icon icon-like-ic-hover"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="item">
+                        <div class="item-product">
                             <div class="item-img">
                                 <a href="">
                                     <img src="img/item-img-1.png" alt="">
@@ -280,9 +284,9 @@
                                         <li class="green-bg"></li>
                                     </ul>
                                     <ul class="item-controls">
-                                        <li><a href=""><span class="custom-icon icon-share-ic"></span></a></li>
-                                        <li><a href=""><span class="custom-icon icon-add-to-cart-ic"></span></a></li>
-                                        <li><a href=""><span class="custom-icon icon-like-ic"></span></a></li>
+                                        <li><a href="" class="share"><i class="custom-icon icon-share-ic"></i><i class="custom-icon icon-share-ic-hover"></i></a></li>
+                                        <li><a href="" class="add-to-cart"><i class="custom-icon icon-add-to-cart-ic"></i><i class="custom-icon icon-add-to-cart-ic-hover"></i></a></li>
+                                        <li><a href="" class="like"><i class="custom-icon icon-like-ic"></i><i class="custom-icon icon-like-ic-hover"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -319,33 +323,37 @@
 <footer class="white-bg">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <div class="footer-logo">
-                    <img src="img/logo.png" alt="">
+            <div class="col-md-4 col-sm-3 col-xs-12">
+                <div class="logo-and-copy">
+                    <div class="footer-logo">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <span class="foot-copyright">shopy c 2015 . your copy right here</span>
                 </div>
-                <span class="foot-copyright">shopy c 2015 . your copy right here</span>
             </div>
-            <div class="col-md-2">
+
+            <div class="col-sm-2 col-xs-4">
                 <ul class="footer-menu">
                     <li><a href="">about us</a></li>
                     <li><a href="">contact us</a></li>
                     <li><a href="">support</a></li>
                 </ul>
             </div>
-            <div class="col-md-2">
+            <div class="col-sm-2 col-xs-4">
                 <ul class="footer-menu">
                     <li><a href="">our feed</a></li>
                     <li><a href="">terms and conditions</a></li>
                     <li><a href="">our privacy</a></li>
                 </ul>
             </div>
-            <div class="col-md-2">
+            <div class="col-sm-2 col-xs-4">
                 <ul class="footer-menu">
                     <li><a href="">join us</a></li>
                     <li><a href="">live support</a></li>
                 </ul>
             </div>
-            <div class="col-md-2">
+
+            <div class="col-md-2 col-sm-3 col-xs-12">
                 <div class="payment-methods">
                     <span>Payment methods</span>
                     <ul class="payment-icons">
@@ -368,6 +376,7 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
 <script src="js/jquery.formstyler.min.js"></script>
 <script src="js/plugins.min.js"></script>
 </body>
